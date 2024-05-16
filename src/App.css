@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.gradient-text{
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t  from-blue-500 to-cyan-300 text-transparent;
+}
+.c_text{
+  
+  font-size: 12px/* 14px */;
+  line-height: 1.25rem/* 20px */;
+
+}
