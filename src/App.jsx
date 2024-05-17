@@ -127,7 +127,7 @@ function App() {
             <div className='mt-6'>
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>CSS</h2>
+                  <h2 className='text-lg font-semibold'>CSS/Bootstrap/Tailwind Css</h2>
                   <p className='text-gray-500'>Basics</p>
                   <p>(2/5)</p>
                 </div>
@@ -159,7 +159,7 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>SQL</h2>
-                  <p className='text-gray-500'>basics</p>
+                  <p className='text-gray-500'>Basics</p>
                   <p>(2/5)</p>
                 </div>
                 <span className='w-[69%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
@@ -170,10 +170,21 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>React</h2>
-                  <p className='text-gray-500'>basics</p>
+                  <p className='text-gray-500'>Basics</p>
                   <p>(1/5)</p>
                 </div>
                 <span className='w-[42%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
+              </div>
+            </div>
+
+            <div className='mt-6'>
+              <div className='container m-auto px-10'>
+                <div className='flex justify-between items-center'>
+                  <h2 className='text-lg font-semibold'>Java</h2>
+                  <p className='text-gray-500'>Basics</p>
+                  <p>(2/5)</p>
+                </div>
+                <span className='w-[52%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
             </div>
           </div>
@@ -205,6 +216,7 @@ function App() {
                   Leadership
                 </p>
               </div>
+              
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
               <div>
@@ -220,6 +232,28 @@ function App() {
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
                   Teambuilding
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  StreamLit
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  Problem Solving
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  Social Media Creator
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  PowerPoint Presentation
                 </p>
               </div>
             </div>
@@ -281,10 +315,22 @@ function App() {
             </div>
           </div>
         </section>
-        {/* Certficiate Section */}
-        <section>
-
-        </section>
+        <section className="py-8" id="certificates">
+      <div className="container m-auto px-4">
+        <h2 className="text-2xl font-semibold">Certificates</h2>
+        <div className="flex flex-wrap">
+          {certificates.map((certificate, index) => (
+            <Certificate
+              key={index}
+              title={certificate.title}
+              image={certificate.image}
+              issuer={certificate.issuer}
+              date={certificate.date}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
       </main>
       <footer >
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
