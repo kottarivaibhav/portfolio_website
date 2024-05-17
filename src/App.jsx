@@ -61,7 +61,7 @@ function App() {
           </div>
         </section>
         {/* Project Sections */}
-        <section className='mt-12 mr-4' id='Project'>
+        <section className='mt-12 mr-4' id='Projects'>
   <div className='container m-5 px-10'>
     <h2 className="text-2xl font-semibold">Projects</h2>
     <div className='flex gap-5'>
@@ -315,22 +315,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="py-8" id="certificates">
-      <div className="container m-auto px-4">
-        <h2 className="text-2xl font-semibold">Certificates</h2>
-        <div className="flex flex-wrap">
-          {certificates.map((certificate, index) => (
-            <Certificate
-              key={index}
-              title={certificate.title}
-              image={certificate.image}
-              issuer={certificate.issuer}
-              date={certificate.date}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+     
       </main>
       <footer >
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
