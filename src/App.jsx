@@ -281,6 +281,10 @@ function App() {
             </div>
           </div>
         </section>
+        {/* Certficiate Section */}
+        <section>
+
+        </section>
       </main>
       <footer >
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
