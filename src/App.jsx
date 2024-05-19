@@ -40,27 +40,26 @@ function App() {
 
       <main className="relative mt-10  justify-normal left-4 right-1" >
         {/* Intro Banner section */}
-        <section className='mt-5'>
-  <div className='container m-auto px-4 py-8 md:px-10 md:py-16 flex flex-col md:flex-row gap-8 items-center'>
-    <div className='text-center md:text-left'>
-      <h2 className='font-bold text-3xl md:text-5xl'>Hello! I am Vaibhav Kottari</h2>
-      <h2 className='font-bold text-2xl md:text-4xl mt-1 gradient-text'>Aspiring Computer Science Engineer</h2>
-      <p className='mt-5 text-gray-400'>
-        <span className='block'>A Student of Computer Science Engineering at St Joseph Engineering College, Mangalore,</span>
-        <span className='block'>who is passionate about Data Science and development. I am always curious to learn new things and explore new technologies.</span>
-      </p>
-      <button className="px-6 md:px-8 shadow-gray-500 shadow-md py-3 md:py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-        <a href='https://drive.google.com/file/d/1wwhQtESs6jijPuG6tfx8wqc3h7ec-UXC/view?usp=sharing'>
-          Download resume</a>
-      </button>
-    </div>
-    <div className='relative'>
-      <img src={profile} alt='profile' className='relative z-10 py-4 w-48 md:w-80' />
-      <img src={profile_small} alt='circle' className='absolute top-0 left-1/2 transform -translate-x-1/2 md:top-1 md:left-auto md:transform-none md:bottom-55 w-32 md:w-auto' />
-    </div>
-  </div>
-</section>
-
+        <section className=' mt-5'>
+          <div className=' container m-auto px-10 py-16 flex gap-8'>
+            <div>
+              <h2 className=' font-bold text-5xl'>Hello ! I am Vaibhav Kottari</h2>
+              <h2 className=' font-bold text-4xl mt-1 gradient-text'>Aspiring Computer Science Engineer</h2>
+              <p className='mt-5 text-gray-400'>
+                <span className='block'>A Student of Computer Science Engineering at St Joseph Engineering College, Mangalore,</span>
+                <span className='block'>who is passionate about Data Science and development. I am always curious to learn new things and explore new technologies.</span>
+              </p>
+              <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <a href='https://drive.google.com/file/d/1wwhQtESs6jijPuG6tfx8wqc3h7ec-UXC/view?usp=sharing'>
+                  Download resume</a>
+              </button>
+            </div>
+            <div className='relative'>
+              <img src={profile} alt='profile' width={400} className='relative z-10 py-4' />
+              <img src={profile_small} alt='circle' className='absolute top-1 left-75 z-125  bottom-55 ' />
+            </div>
+          </div>
+        </section>
         {/* Project Sections */}
         <section className='mt-10' id='Projects'>
   <div className='container mx-auto px-4'>
