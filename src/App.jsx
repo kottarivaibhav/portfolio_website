@@ -84,7 +84,7 @@ function App() {
         <p className="text-gray-400 text-sm mt-2">This was my Capstone Project from Meta Front End Developer Path. I used React Framework for this Project.</p>
         <div className="mt-auto flex mt-12 gap-2">
           <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-            <a href='#' target='_blank' rel='noopener noreferrer'>Live preview</a>
+            <a href='https://kottarivaibhav.github.io/meta_front_end_developer_capstone/' target='_blank' rel='noopener noreferrer'>Live preview</a>
           </button>
           <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
             <a href='https://github.com/kottarivaibhav/meta_front_end_developer_capstone' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
