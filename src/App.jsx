@@ -44,7 +44,7 @@ function App() {
           <div className=' container m-auto px-10 py-16 flex gap-8'>
             <div>
               <h2 className=' font-bold text-5xl'>Hello ! I am Vaibhav Kottari</h2>
-              <h2 className=' font-bold text-4xl mt-1 gradient-text'>I am a Data Analyst</h2>
+              <h2 className=' font-bold text-4xl mt-1 gradient-text'>Aspiring Computer Science Engineer</h2>
               <p className='mt-5 text-gray-400'>
                 <span className='block'>A Student of Computer Science Engineering at St Joseph Engineering College, Mangalore,</span>
                 <span className='block'>who is passionate about Data Science and development. I am always curious to learn new things and explore new technologies.</span>
@@ -61,22 +61,22 @@ function App() {
           </div>
         </section>
         {/* Project Sections */}
-        <section className='mt-12 mr-4' id='Projects'>
-  <div className='container m-5 px-10'>
-    <h2 className="text-2xl font-semibold">Projects</h2>
-    <div className='flex gap-5'>
-      <div className='flex-1 border rounded-md p-5 flex flex-col'>
-        <img src={project1} alt='project1' width={480} className="w-full h-48 object-cover mb-4" />
-        <h3 className=" text-2xl font-semibold mt-7">College Event Management System.</h3>
-        <p className="text-gray-400 c_text mt-2">This project was part of my DBMS mini project where I developed a system for managing college events. I used HTML, CSS, and JavaScript for the front-end and PHP for the back-end along with MySQL.</p>
-        <div className="mt-auto flex mt-12 gap-2">
-          <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-            <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Live preview</a>
-          </button>
-          <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-            <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Checkout GitHub</a>
-          </button>
-        </div>
+        <section className='mt-10 mr-4' id='Projects'>
+      <div className='container m-4 px-8'>
+        <h2 className="text-2xl font-semibold">Projects</h2>
+        <div className='flex gap-5'>
+          <div className='flex-1 border rounded-md p-5 flex flex-col'>
+            <img src={project1} alt='project1' width={480} className="w-full h-48 object-cover mb-4" />
+            <h3 className=" text-2xl font-semibold mt-7">College Event Management System.</h3>
+            <p className="text-gray-400 c_text mt-2">This project was part of my DBMS mini project where I developed a system for managing college events. I used HTML, CSS, and JavaScript for the front-end and PHP for the back-end along with MySQL.</p>
+            <div className="mt-auto flex mt-12 gap-2">
+              <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Live preview</a>
+              </button>
+              <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Checkout GitHub</a>
+              </button>
+            </div>
       </div>
       {/* Repeat the same structure for other project cards */}
       <div className='flex-1 border rounded-md p-5 flex flex-col'>
@@ -236,7 +236,7 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  StreamLit
+                  Azure Technology
                 </p>
               </div>
             </div>
@@ -253,7 +253,7 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  PowerPoint Presentation
+                  Git/GitHub
                 </p>
               </div>
             </div>
@@ -267,24 +267,31 @@ function App() {
               <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
 
                 <p>
-                  I am Vaibhav Ramachandra Kottari. I am from Mangalore, Karnataka. I have spent my childhood in UAE completing my education till 10th standard
-                  in Leaders Private School , before moving onto India.
-                </p>
+                  I am Vaibhav Ramachandra Kottari. I am from Mangalore, Karnataka. I have spent my childhood in UAE completing my Higher education Day
+                  in Leaders Private School , before moving to India.I scored an percentage of <b>93%</b> in my <b>10th grade </b>
+                </p> 
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2019</h3>
                 <p>
                   I completed my PU education in mangalore in Canara Vikaas PU college , Maryhill, Mangalore(then known as Vikas PU College).
-                  I pursued PCMC, from where I developed my Interest for Computer Science.
+                  I pursued PCMC, from where I developed my Interest for Computer Science. I scored an percentage of <b>96% in my 12th grade.</b>
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2021</h3>
                 <p>
-                  I then Joined St Joseph Engineering College , Mangalore where I am pursuing Computer Science Engineering .I am currently in my 3rd Year of my
+                  I then Joined <b>St Joseph Engineering College , Mangalore </b> where I am pursuing Computer Science Engineering .I am currently in my 3rd Year of my
                   engineerning course.Over the period of time I have developed my interest in Data Science and Development.As part of my college Life I have
                   been part of various clubs and have taken part in various events.I have was the Graphic Designer of AICUF,SJEC. After I left AICUF , I joined another
                   club of our college known as Innoventure where I am currently working in the media team.
+                </p>
+              </div>
+
+              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
+                <h3 className=" relative left-2 text-lg font-semibold">Hobbies</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudantium delectus quisquam libero sit dolor facere. Facere dolorem, voluptas labore quisquam consequatur nisi.
                 </p>
               </div>
 
@@ -321,6 +328,10 @@ function App() {
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
           <div >
             <p className='text-gray-300 text-sm'>Copyright @ 2023</p>
+          </div>
+          <div>
+            <p className='text-gray-300 text-sm'>Designed by Vaibhav Ramachandra Kottari</p>
+            <p className='text-gray-300 text-sm'></p>
           </div>
           <ul className='flex gap-4 left-10'>
             <li>
