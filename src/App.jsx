@@ -24,13 +24,13 @@ function App() {
             <div className=' flex justify-between items-center'>
               <ul className=' flex gap-4'>
                 <li>
-                  <a className='text-gray-400 hover:text-white  cursor-pointer ' href='#Projects'>Projects</a>
+                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#Projects'>Projects</a>
                 </li>
                 <li>
-                  <a className='text-gray-400 hover:text-white  cursor-pointer ' href='#Technology'>Technologies</a>
+                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#Technology'>Technologies</a>
                 </li>
                 <li>
-                  <a className='text-gray-400 hover:text-white  cursor-pointer ' href='#About'>About Me</a>
+                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#About'>About Me</a>
                 </li>
               </ul>
             </div>
@@ -61,7 +61,7 @@ function App() {
           </div>
         </section>
         {/* Project Sections */}
-        <section className='mt-10 mr-4' id='Projects'>
+        <section className='mt-10 mr-6' id='Projects'>
       <div className='container m-4 px-8'>
         <h2 className="text-2xl font-semibold">Projects</h2>
         <div className='flex gap-5'>
@@ -101,7 +101,7 @@ function App() {
             <a href='#'>Live Preview</a>
           </button>
           <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-            <a href='https://github.com/kottarivaibhav/Ecommerce_PizzaStore'>Checkout GitHub</a>
+            <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/'>Checkout GitHub</a>
           </button>
         </div>
       </div>
@@ -288,16 +288,12 @@ function App() {
                 </p>
               </div>
 
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className=" relative left-2 text-lg font-semibold">Hobbies</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudantium delectus quisquam libero sit dolor facere. Facere dolorem, voluptas labore quisquam consequatur nisi.
-                </p>
-              </div>
+              
 
             </div>
           </div>
         </section>
+        
         {/* Internship Experience Section */}
         <section className="py-12">
           <div className="container mx-auto px-4">
@@ -330,18 +326,18 @@ function App() {
             <p className='text-gray-300 text-sm'>Copyright @ 2023</p>
           </div>
           <div>
-            <p className='text-gray-300 text-sm'>Designed by Vaibhav Ramachandra Kottari</p>
+            <p className='text-gray-300 text-2xl font-mono'>Designed by Vaibhav Ramachandra Kottari</p>
             <p className='text-gray-300 text-sm'></p>
           </div>
           <ul className='flex gap-4 left-10'>
             <li>
-              <a href='https://github.com/kottarivaibhav'><img src={Github} className='w-10' /></a>
+              <a href='https://github.com/kottarivaibhav target="_blank" rel="noopener noreferrer"'><img src={Github} className='w-10' /></a>
             </li>
             <li>
-              <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr'><img src={Instagram} className='w-10' /></a>
+              <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr target="_blank" rel="noopener noreferrer"'><img src={Instagram} className='w-10' /></a>
             </li>
             <li>
-              <a href='https://www.linkedin.com/in/vaibhav-kottari/'><img src={linkedin} className='w-10' /></a>
+              <a href='https://www.linkedin.com/in/vaibhav-kottari/ target="_blank" rel="noopener noreferrer"'><img src={linkedin} className='w-10' /></a>
             </li>
           </ul>
         </div>

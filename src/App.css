@@ -13,3 +13,131 @@ body{
   line-height: 1.25rem/* 20px */;
 
 }
+header {
+  background-color: #5292b9; /* White-gray background */
+  color: black; /* Black text */
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+footer{
+  background-color: #5292b9; 
+  color: black;
+}
+
+/* mobile responsive part */
+/* Base styles */
+.projects-section {
+  margin: 2.5rem 1rem;
+}
+
+.projects-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.projects-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.project-card p {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttons button a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons button:first-of-type {
+  background: linear-gradient(to top, #007bff, #00c6ff);
+}
+
+.buttons button:first-of-type:hover {
+  background: linear-gradient(to top, #0056b3, #0093d6);
+}
+
+.buttons button:last-of-type {
+  background: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.buttons button:last-of-type:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+  }
+}
