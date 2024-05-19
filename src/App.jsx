@@ -24,13 +24,13 @@ function App() {
             <div className=' flex justify-between items-center'>
               <ul className=' flex gap-4'>
                 <li>
-                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#Projects'>Projects</a>
+                  <a className='text-white hover:text-black  cursor-pointer ' href='#Projects'>Projects</a>
                 </li>
                 <li>
-                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#Technology'>Technologies</a>
+                  <a className='text-white hover:text-white  cursor-pointer ' href='#Technology'>Technologies</a>
                 </li>
                 <li>
-                  <a className='text-gray-800 hover:text-white  cursor-pointer ' href='#About'>About Me</a>
+                  <a className='text-white hover:text-white  cursor-pointer ' href='#About'>About Me</a>
                 </li>
               </ul>
             </div>
@@ -97,10 +97,10 @@ function App() {
         <p className="text-gray-400 text-sm mt-2">Responsive HTML/CSS layout for online Pizza ordering website using HTML5, CSS3 (SCSS)</p>
         <div className="mt-auto flex mt-12 gap-2">
           <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-            <a href='#' target='_blank' rel='noopener noreferrer'>Live Preview</a>
+            <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/' target='_blank' rel='noopener noreferrer'>Live Preview</a>
           </button>
           <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-            <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
+            <a href='#' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
           </button>
         </div>
       </div>
@@ -322,7 +322,7 @@ function App() {
       <footer >
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
           <div >
-            <p className=''>Copyright @ 2023</p>
+            <p className=''>Copyright @ 2024</p>
           </div>
           <div>
             <p className=' text-2xl font-mono'>Designed by Vaibhav Ramachandra Kottari</p>

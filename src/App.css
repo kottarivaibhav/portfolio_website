@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: rgba(6, 11, 22, 0.937);
   color: white;
 }
 
@@ -14,16 +14,16 @@ body{
 
 }
 header {
-  background-color: #5292b9; /* White-gray background */
-  color: black; /* Black text */
+  background-color: #5bcede; /* White-gray background */
+  color: rgb(255, 255, 255); /* Black text */
   position: sticky; /* Sticky positioning */
   top: 0; /* Stick to the top */
   z-index: 1000; /* Ensure it stays above other content */
 }
 
 footer{
-  background-color: #5292b9; 
-  color: rgb(11, 10, 10);
+  background-color: #5bcede; 
+  color: rgb(255, 255, 255);
   
 }
 
