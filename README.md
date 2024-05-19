@@ -1,3 +1,3 @@
 # Portfolio Website
 
-This is my - Vaibhva Kottari's Portfolio Website
+This is my - Vaibhav Kottari's Portfolio Website
