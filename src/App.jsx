@@ -330,13 +330,13 @@ function App() {
           </div>
           <ul className='flex gap-4 left-10'>
             <li>
-              <a href=' https://github.com/kottarivaibhav target="_blank" rel="noopener noreferrer"'><img src={Github} className='w-10' /></a>
+              <a href=' https://github.com/kottarivaibhav' target="_blank" rel="noopener noreferrer"><img src={Github} className='w-10' /></a>
             </li>
             <li>
-              <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr target="_blank" rel="noopener noreferrer"'><img src={Instagram} className='w-10' /></a>
+              <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr' target="_blank" rel="noopener noreferrer"><img src={Instagram} className='w-10' /></a>
             </li>
             <li>
-              <a href='https://www.linkedin.com/in/vaibhav-kottari/ target="_blank" rel="noopener noreferrer"'><img src={linkedin} className='w-10' /></a>
+              <a href='https://www.linkedin.com/in/vaibhav-kottari/' target="_blank" rel="noopener noreferrer"><img src={linkedin} className='w-10' /></a>
             </li>
           </ul>
         </div>
