@@ -61,47 +61,46 @@ function App() {
           </div>
         </section>
         {/* Project Sections */}
-        <section className='mt-10 mr-6' id='Projects'>
-      <div className='container m-4 px-8'>
-        <h2 className="text-2xl font-semibold">Projects</h2>
-        <div className='flex gap-5'>
-          <div className='flex-1 border rounded-md p-5 flex flex-col'>
-            <img src={project1} alt='project1' width={480} className="w-full h-48 object-cover mb-4" />
-            <h3 className=" text-2xl font-semibold mt-7">College Event Management System.</h3>
-            <p className="text-gray-400 c_text mt-2">This project was part of my DBMS mini project where I developed a system for managing college events. I used HTML, CSS, and JavaScript for the front-end and PHP for the back-end along with MySQL.</p>
-            <div className="mt-auto flex mt-12 gap-2">
-              <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Live preview</a>
-              </button>
-              <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                <a href='https://github.com/kottarivaibhav/dbms_mini_project'>Checkout GitHub</a>
-              </button>
-            </div>
-      </div>
-      {/* Repeat the same structure for other project cards */}
+        <section className='mt-10' id='Projects'>
+  <div className='container mx-auto px-4'>
+    <h2 className="text-2xl font-semibold">Projects</h2>
+    <div className='flex flex-col md:flex-row gap-5 mt-5 mr-2'>
       <div className='flex-1 border rounded-md p-5 flex flex-col'>
-        <img src={project2} alt='project2' width={300} className="w-full h-48 object-cover mb-4" />
-        <h3 className="text-2xl font-semibold mt-8">Little Lemon Restaurant</h3>
-        <p className="text-gray-400 text-sm mt-2">This was my Capstone Project from Meta Front End Developer Path. I used React Framework for this Project.</p>
+        <img src={project1} alt='project1' className="w-full h-48 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mt-7">College Event Management System.</h3>
+        <p className="text-gray-400 mt-2">This project was part of my DBMS mini project where I developed a system for managing college events. I used HTML, CSS, and JavaScript for the front-end and PHP for the back-end along with MySQL.</p>
         <div className="mt-auto flex mt-12 gap-2">
           <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-            <a href='#'>Live preview</a>
+            <a href='https://github.com/kottarivaibhav/dbms_mini_project' target='_blank' rel='noopener noreferrer'>Live preview</a>
           </button>
           <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-            <a href='https://github.com/kottarivaibhav/meta_front_end_developer_capstone'>Checkout GitHub</a>
+            <a href='https://github.com/kottarivaibhav/dbms_mini_project' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
           </button>
         </div>
       </div>
       <div className='flex-1 border rounded-md p-5 flex flex-col'>
-        <img src={project3} alt='project3' width={300} className="w-full h-48 object-cover mb-4" />
+        <img src={project2} alt='project2' className="w-full h-48 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mt-8">Little Lemon Restaurant</h3>
+        <p className="text-gray-400 text-sm mt-2">This was my Capstone Project from Meta Front End Developer Path. I used React Framework for this Project.</p>
+        <div className="mt-auto flex mt-12 gap-2">
+          <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+            <a href='#' target='_blank' rel='noopener noreferrer'>Live preview</a>
+          </button>
+          <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+            <a href='https://github.com/kottarivaibhav/meta_front_end_developer_capstone' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
+          </button>
+        </div>
+      </div>
+      <div className='flex-1 border rounded-md p-5 flex flex-col'>
+        <img src={project3} alt='project3' className="w-full h-48 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mt-8">Pizza E-commerce</h3>
         <p className="text-gray-400 text-sm mt-2">Responsive HTML/CSS layout for online Pizza ordering website using HTML5, CSS3 (SCSS)</p>
         <div className="mt-auto flex mt-12 gap-2">
           <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-            <a href='#'>Live Preview</a>
+            <a href='#' target='_blank' rel='noopener noreferrer'>Live Preview</a>
           </button>
           <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-            <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/'>Checkout GitHub</a>
+            <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
           </button>
         </div>
       </div>
@@ -323,15 +322,15 @@ function App() {
       <footer >
         <div className='container m-auto flex justify-between px-4 py-5 left-8'>
           <div >
-            <p className='text-gray-300 text-sm'>Copyright @ 2023</p>
+            <p className=''>Copyright @ 2023</p>
           </div>
           <div>
-            <p className='text-gray-300 text-2xl font-mono'>Designed by Vaibhav Ramachandra Kottari</p>
-            <p className='text-gray-300 text-sm'></p>
+            <p className=' text-2xl font-mono'>Designed by Vaibhav Ramachandra Kottari</p>
+            <p className='text-sm'></p>
           </div>
           <ul className='flex gap-4 left-10'>
             <li>
-              <a href='https://github.com/kottarivaibhav target="_blank" rel="noopener noreferrer"'><img src={Github} className='w-10' /></a>
+              <a href=' https://github.com/kottarivaibhav target="_blank" rel="noopener noreferrer"'><img src={Github} className='w-10' /></a>
             </li>
             <li>
               <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr target="_blank" rel="noopener noreferrer"'><img src={Instagram} className='w-10' /></a>

@@ -23,80 +23,13 @@ header {
 
 footer{
   background-color: #5292b9; 
-  color: black;
+  color: rgb(11, 10, 10);
+  
 }
 
 /* mobile responsive part */
 /* Base styles */
-.projects-section {
-  margin: 2.5rem 1rem;
-}
 
-.projects-section .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.projects-section h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25rem;
-}
-
-.project-card {
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-image {
-  width: 100%;
-  height: 12rem;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-card h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin: 1rem 0;
-}
-
-.project-card p {
-  color: #666;
-  font-size: 0.875rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.buttons button {
-  flex: 1;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.buttons button a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
 
 .buttons button:first-of-type {
   background: linear-gradient(to top, #007bff, #00c6ff);
@@ -120,13 +53,14 @@ footer{
 /* Responsive styles */
 @media (min-width: 640px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column-reverse;
   }
 }
 
 @media (min-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .projects-section h2 {
