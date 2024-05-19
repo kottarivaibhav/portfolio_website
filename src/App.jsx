@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <header>
-        <div className='container m-auto px-4 py-4'>
+        <div className='container m-auto px-5 py-4'>
           <div className='flex justify-between'>
             <div><h1 className=' font-extrabold  text-2xl '>Vaibhav Kottari's Portfolio</h1></div>
             <div className=' flex justify-between items-center'>
