@@ -50,7 +50,7 @@ function App() {
                 <span className='block'>who is passionate about Data Science and development. I am always curious to learn new things and explore new technologies.</span>
               </p>
               <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                <a href='https://drive.google.com/file/d/1wwhQtESs6jijPuG6tfx8wqc3h7ec-UXC/view?usp=sharing'>
+                <a href='https://drive.google.com/file/d/1xuCKfQTdizIkA10YZjRnCCfggGJr2Mbr/view?usp=sharing'>
                   Download resume</a>
               </button>
             </div>
@@ -118,8 +118,7 @@ function App() {
             <div className='container m-auto px-10'>
               <div className='flex justify-between items-center'>
                 <h2 className='text-lg font-semibold'>HTML</h2>
-                <p className='text-gray-500'>Intermediate</p>
-                <p>(3/5)</p>
+                
               </div>
               <span className='w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
             </div>
@@ -127,8 +126,7 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>CSS/Bootstrap/Tailwind Css</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(2/5)</p>
+                  
                 </div>
                 <span className='w-[57%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -138,8 +136,8 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>Data Analysis</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(2/5)</p>
+                  
+                  
                 </div>
                 <span className='w-[55%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -148,8 +146,8 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>Python</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(2/5)</p>
+                  
+                
                 </div>
                 <span className='w-[59%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -158,8 +156,8 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>SQL</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(2/5)</p>
+                  
+                  
                 </div>
                 <span className='w-[69%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -169,8 +167,8 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>React</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(1/5)</p>
+                  
+                  
                 </div>
                 <span className='w-[42%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -180,8 +178,8 @@ function App() {
               <div className='container m-auto px-10'>
                 <div className='flex justify-between items-center'>
                   <h2 className='text-lg font-semibold'>Java</h2>
-                  <p className='text-gray-500'>Basics</p>
-                  <p>(2/5)</p>
+                  
+                  
                 </div>
                 <span className='w-[52%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
               </div>
@@ -300,7 +298,7 @@ function App() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {/* Left Column */}
               <div className="flex flex-col justify-center mt-7">
-                <h3 className="text-xl font-semibold mb-4">Edunet Foundation</h3>
+                <h3 className="text-xl font-semibold mb-4">Data Analyst Intern | Edunet Foundation</h3>
                 <p className="text-blue-200 mb-4">Bangalore,Kanataka(online)- 2month</p>
                 <p className=" text-gray-400">
                   During the internship, I worked on a project that involved data analysis and visualization using Python . I learned how to work with large datasets and gained experience in data cleaning, data wrangling, and data visualization. I also developed my problem-solving skills and learned how to work effectively in a team.
@@ -308,10 +306,10 @@ function App() {
               </div>
               {/* Right Column (You can add more internship experiences in the same format) */}
               <div className="flex flex-col justify-center ">
-                <h3 className="text-xl font-semibold mb-4">VOIS Vodafone</h3>
+                <h3 className="text-xl font-semibold mb-4">Web Developer Intern | Internpe</h3>
                 <p className="text-blue-200 mb-4">Remote(Online)- 2month</p>
                 <p className=" text-gray-400">
-                  I worked on Applying Artificial Intelligence and Machine Learning to the data provided by the company. I learned how to work with large datasets and gained experience in data cleaning, data wrangling, and data visualization. I also developed my problem-solving skills .
+                Completed a 1-month internship focusing on web development, utilizing HTML, CSS, and JavaScript. Developed projects including a calculator, to-do list, e-commerce website, and Connect-4 game, gaining practical experience in building functional web applications.
                 </p>
               </div>
             </div>
