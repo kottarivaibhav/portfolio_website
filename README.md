@@ -56,16 +56,16 @@ To run this project locally, follow these steps:
 
 To start the development server, run:
 ```bash
-**npm start**
-
+npm start
+```
 This will start the app and open it in your default web browser. The app will reload automatically if you make changes to the code.
 
 To build the project for production, run:
-**npm run build**
-
+```bash
+npm run build
+```
 This will create an optimized production build in the build folder.
 
-```
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
