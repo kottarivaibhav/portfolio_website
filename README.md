@@ -1,8 +1,7 @@
 # Portfolio Website
 
-This is my - Vaibhav Kottari's Portfolio Website
-    
-https://kottarivaibhav.github.io/portfolio_website/
+This is my - Vaibhav Kottari's Portfolio Website<br>
+    https://kottarivaibhav.github.io/portfolio_website/
 
 ## Table of Contents
 
