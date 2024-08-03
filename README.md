@@ -65,6 +65,8 @@ npm run build
 
 This will create an optimized production build in the build folder.
 
+```
+
 Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
 
@@ -77,5 +79,5 @@ You can reach me at:
 Email: vaibhav@example.com
 LinkedIn: Vaibhav Kottari
 GitHub: Vaibhav Kottari
-```
+
 
