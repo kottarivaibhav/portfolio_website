@@ -2,7 +2,7 @@
 
 This is my - Vaibhav Kottari's Portfolio Website
     
-    Link-https://kottarivaibhav.github.io/portfolio_website/
+https://kottarivaibhav.github.io/portfolio_website/
 
 ## Table of Contents
 
