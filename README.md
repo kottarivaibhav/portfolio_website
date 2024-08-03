@@ -67,13 +67,13 @@ This will create an optimized production build in the build folder.
 
 ```
 
-Contributing
+## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
+## Contact
 You can reach me at:
 
 Email: vaibhav@example.com
