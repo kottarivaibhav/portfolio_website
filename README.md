@@ -1,6 +1,7 @@
 # Portfolio Website
 
 This is my - Vaibhav Kottari's Portfolio Website
+    Link-https://kottarivaibhav.github.io/portfolio_website/
 
 ## Table of Contents
 
@@ -77,7 +78,9 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 You can reach me at:
 
 Email: vaibhav@example.com
-LinkedIn: Vaibhav Kottari
-GitHub: Vaibhav Kottari
+
+LinkedIn: [Vaibhav Kottari](https://www.linkedin.com/in/vaibhav-kottari/)
+
+GitHub: [Vaibhav Kottari](https://github.com/kottarivaibhav)
 
 
