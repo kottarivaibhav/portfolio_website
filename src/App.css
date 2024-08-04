@@ -1,8 +1,66 @@
 /* General body styles */
+
+
+
 body,html {
   background-color: rgba(6, 11, 22, 0.937); /* Dark background color */
   color: white; /* White text color */
   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* src/App.css */
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  mix-blend-mode: difference;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+/* Core cursor */
+.custom-cursor::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 255, 0.7);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Sparkling effect */
+.custom-cursor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 0, 255, 0.8) 0%, rgba(0, 0, 255, 0) 80%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: sparkle 1.5s infinite alternate;
+}
+
+/* Keyframes for sparkling effect */
+@keyframes sparkle {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
 }
 
 
@@ -53,6 +111,30 @@ header {
   width: 80%; /* 80% width of parent */
   max-width: 800px; /* Maximum width of 800px */
 }
+
+
+/* src/App.css */
+/* This is for the Hello vaibhav Part */
+.heading {
+  font-family: 'Courier New', Courier, monospace;
+  color: #eefdfd; /* Light blue text color */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #00ffff; /* Light blue cursor effect */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #00ffff; }
+}
+
 
 /* Styling for h2 headers */
 h2 {
@@ -167,6 +249,167 @@ footer {
   background: #007bff; /* Blue background on hover */
   color: #fff; /* White text on hover */
 }
+
+/* src/App.css or src/components/CertificationCarousel.css */
+
+.custom-carousel-container {
+  max-width: 800px; /* Adjust container width */
+  margin: 0 auto; /* Center container */
+}
+/* src/App.css */
+
+.next-section {
+  margin-top: 0; /* Remove or adjust top margin */
+}
+
+
+.glow-effect {
+  background-color: #f0f0f0; /* Light gray background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2); /* Slight glow effect */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+  padding: 20px; /* Add padding inside the card */
+  text-align: center; /* Center text inside the card */
+  margin: 10px; /* Add margin for spacing between cards */
+  margin-bottom: 0;
+}
+
+.glow-effect img {
+  display: block;
+  margin: 0 auto; /* Center-align the image */
+}
+
+.glow-effect h3 {
+  color: black; /* Set title color to black */
+  margin-bottom: 10px; /* Space between title and description */
+}
+
+.glow-effect p {
+  color: #333; /* Darker color for description */
+  margin-bottom: 10px; /* Space between description and link */
+  text-align: justify;
+}
+
+.glow-effect a {
+  color: #1d4ed8; /* Blue color for link */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+  display: block; /* Make the link a block-level element for centering */
+  margin-top: 10px; /* Space above the link */
+}
+
+.glow-effect a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* src/App.css */
+
+.glow-button {
+  background-color: #d9dff0; /* Light blue background */
+  color: #081018; /* Dark text color */
+  border: 2px solid #abb0b4; /* Dark border */
+  padding: 10px 20px; /* Increased padding for better spacing */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 15px; /* Font size */
+  font-weight: 600; /* Semi-bold text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  display: inline-flex; /* Use inline-flex for better centering */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center; /* Center text */
+  margin: 10px 0; /* Space above and below the button */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.glow-button a {
+  color: #081018; /* Dark text color */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.glow-button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-2px); /* Slightly lift button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.glow-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5); /* Blue glow on focus */
+}
+
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  font-size: 24px; /* Adjust size */
+  color: #081018; /* Dark color for arrows */
+  width: 50px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  line-height: 50px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  border-radius: 50%; /* Rounded shape */
+  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.slick-prev {
+  left: 10px; /* Position from left */
+}
+
+.slick-next {
+  right: 10px; /* Position from right */
+}
+
+.slick-prev:before {
+  content: '\f053'; /* Font Awesome icon for previous (Chevron Left) */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
+  font-weight: 900; /* Set weight for icons */
+}
+
+.slick-next:before {
+  content: '\f054'; /* Font Awesome icon for next (Chevron Right) */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
+  font-weight: 900; /* Set weight for icons */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: #081018; /* Darker background on hover */
+  color: #d9dff0; /* Light text color on hover */
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+/* */
+.slick-track {
+  display: flex; /* Align slides in a row */
+  align-items: center; /* Center slides vertically */
+}
+
+.slick-slide {
+  margin:0 2px;
+  margin-bottom: 0%;
+   /* Adjust to your preferred spacing */
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust dots position */
+}
+
+.slick-prev, .slick-next {
+  font-size: 24px; /* Optional: adjust arrow size */
+  color: #000; /* Optional: change arrow color */
+}
+
+
+
+
+
+
+
+
 
 /* Add this to your CSS file */
 @media (max-width: 375px) {
