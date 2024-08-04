@@ -1,5 +1,9 @@
 
 import './App.css'
+
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaGithub, FaJava, FaPython } from 'react-icons/fa';
+import { SiTailwindcss, SiJavascript, SiMysql,SiMicrosoftazure } from 'react-icons/si';
+
 import profile from './assets/Photo.png'
 import profile_small from './assets/small.png'
 import project1 from './assets/Project_1.png'
@@ -17,8 +21,9 @@ function App() {
 
   return (
     <>
+    <div className='background-move '>
       <header>
-        <div className='container m-auto px-5 py-4'>
+        <div className='container m-auto px-5 py-4 '>
           <div className='flex justify-between'>
             <div><h1 className=' font-extrabold  text-2xl '>Vaibhav Kottari's Portfolio</h1></div>
             <div className=' flex justify-between items-center'>
@@ -41,7 +46,7 @@ function App() {
       <main className="relative mt-10  justify-normal left-4 right-1" >
         {/* Intro Banner section */}
         <section className=' mt-5'>
-          <div className=' container m-auto px-10 py-16 flex gap-8'>
+          <div className=' container m-auto px-10 py-16 flex gap-8 '>
             <div>
               <h2 className=' font-bold text-5xl'>Hello ! I am Vaibhav Kottari</h2>
               <h2 className=' font-bold text-4xl mt-1 gradient-text'>Aspiring Computer Science Engineer</h2>
@@ -50,8 +55,9 @@ function App() {
                 <span className='block'>who is passionate about Data Science and development. I am always curious to learn new things and explore new technologies.</span>
               </p>
               <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                <a href='https://drive.google.com/file/d/1xuCKfQTdizIkA10YZjRnCCfggGJr2Mbr/view?usp=sharing'>
-                  Download resume</a>
+                <a href='https://drive.google.com/file/d/141XIq1fIzTFQ9n48vpMmrKcl93Ezpn5d/view?usp=sharing' target="_blank" rel="noopener noreferrer">
+                Download resume
+                </a>
               </button>
             </div>
             <div className='relative'>
@@ -61,9 +67,9 @@ function App() {
           </div>
         </section>
         {/* Project Sections */}
-        <section className='mt-10' id='Projects'>
+        <section className='mt-4 mr-3 p-6' id='Projects'>
   <div className='container mx-auto px-4'>
-    <h2 className="text-2xl font-semibold">Projects</h2>
+    <h2 className="text-4xl font-bold underline-header">Projects</h2>
     <div className='flex flex-col md:flex-row gap-5 mt-5 mr-2'>
       <div className='flex-1 border rounded-md p-5 flex flex-col'>
         <img src={project1} alt='project1' className="w-full h-48 object-cover mb-4" />
@@ -108,158 +114,134 @@ function App() {
   </div>
 </section>
 
-
-        {/* Technologies Section */}
-        <section className='mt-9 py-7' id='Technology'>
-          <div className='container m-auto px-10 '>
-            <h2 className="text-2xl font-semibold">Technologies</h2>
-          </div>
-          <div className='mt-6'>
-            <div className='container m-auto px-10'>
-              <div className='flex justify-between items-center'>
-                <h2 className='text-lg font-semibold'>HTML</h2>
-                
-              </div>
-              <span className='w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-            </div>
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>CSS/Bootstrap/Tailwind Css</h2>
-                  
-                </div>
-                <span className='w-[57%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-
-            </div>
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>Data Analysis</h2>
-                  
-                  
-                </div>
-                <span className='w-[55%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-            </div>
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>Python</h2>
-                  
-                
-                </div>
-                <span className='w-[59%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-            </div>
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>SQL</h2>
-                  
-                  
-                </div>
-                <span className='w-[69%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-            </div>
-
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>React</h2>
-                  
-                  
-                </div>
-                <span className='w-[42%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-            </div>
-
-            <div className='mt-6'>
-              <div className='container m-auto px-10'>
-                <div className='flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>Java</h2>
-                  
-                  
-                </div>
-                <span className='w-[52%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md' />
-              </div>
-            </div>
-          </div>
-        </section>
+  {/* Technologies Section */}
+<section className='mt-4 mr-3 p-6' id='Technology'>
+  <div className='container m-auto px-10 '>
+  <h2 className="text-4xl font-bold underline-header">Technologies Known</h2>
+  </div>
+  <div className='mt-6'>
+    <div className='container m-auto px-10'>
+      <div className='flex flex-wrap  items-center'>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon'>
+            <FaHtml5 className='text-6xl' />
+            <span className='mt-2'>HTML</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon-1'>
+            <FaCss3Alt className='text-6xl' />
+            <span className='mt-2'>CSS</span>
+        </div>
+          
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon'>
+          <SiTailwindcss className='text-6xl' />
+          <span className='mt-2'>Tailwind CSS</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon-1'>
+            <FaReact className='text-6xl' />
+            <span className='mt-2'>React</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon'>
+            <FaGithub className='text-6xl' />
+            <span className='mt-2'>GitHub</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon'>
+            <SiJavascript className='text-6xl' />
+            <span className='mt-2'>JavaScript</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon-1'>
+            <FaJava className='text-6xl' />
+            <span className='mt-2'>Java</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2  custom-icon'>
+              <SiMicrosoftazure className='text-6xl' />
+              <span className='mt-2'>Azure</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon-1'>
+            <FaPython className='text-6xl' />
+            <span className='mt-2'>Python</span>
+        </div>
+        <div className='flex flex-col items-center w-1/5 p-2 custom-icon'>
+            <SiMysql className='text-6xl' />
+            <span className='mt-2'>MySQL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
         {/* Additional skillset section */}
-        <section className='mt-8 py-4'>
-          <div className="container m-auto px-10 py-14">
-            <h2 className="text-2xl font-semibold">
-              Additional skills
-            </h2>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Graphic Design
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Communication
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Teamwork
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Leadership
-                </p>
-              </div>
-              
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  MS-Excel
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  English
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Teambuilding
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Azure Technology
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Problem Solving
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Social Media Creator
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Git/GitHub
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <section className='mt-4 mr-3 p-6'>
+  <div className="container  px-10 py-14">
+    <h2 className="text-4xl font-bold underline-header">
+      Additional skills
+    </h2>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
+      <div className="flex-1">
+        <p className="skill-item">
+          Canva|Illustrator|Photoshop
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          Communication
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          Teamwork
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          Leadership
+        </p>
+      </div>
+    </div>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
+      <div className="flex-1">
+        <p className="skill-item">
+          MS-Excel
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          English
+        </p>
+      </div>
+      <div className="flex-1" >
+        <p className="skill-item">
+          Teambuilding
+        </p>
+      </div>
+      <div className="flex">
+        <p className="skill-item">
+        Social Media Management
+        </p>
+      </div>
+      
+    </div>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
+      <div className="flex-1">
+        <p className="skill-item">
+          Problem Solving
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          Social Media Creator
+        </p>
+      </div>
+      <div className="flex-1">
+        <p className="skill-item">
+          Ubuntu/Linux
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+        
         {/* About Me Section */}
-        <section className="mt-12 py-7 px-3" id='About'>
+        <section className="mt-4 mr-3 p-6" id='About'>
           <div className="container m-auto px-4">
-            <h2 className="text-2xl font-semibold">About me</h2>
+            <h2 className="text-4xl font-bold underline-header">About me</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
               <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
 
@@ -292,9 +274,9 @@ function App() {
         </section>
         
         {/* Internship Experience Section */}
-        <section className="py-12">
+        <section className="mt-4 mb-7 mr-3 p-6">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-6">Internship Experience</h2>
+            <h2 className="text-4xl font-bold underline-header">Internship Experience</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {/* Left Column */}
               <div className="flex flex-col justify-center mt-7">
@@ -317,28 +299,36 @@ function App() {
         </section>
      
       </main>
-      <footer >
-        <div className='container m-auto flex justify-between px-4 py-5 left-8'>
-          <div >
-            <p className=''>Copyright @ 2024</p>
-          </div>
-          <div>
-            <p className=' text-2xl font-mono'>Designed by Vaibhav Ramachandra Kottari</p>
-            <p className='text-sm'></p>
-          </div>
-          <ul className='flex gap-4 left-10'>
-            <li>
-              <a href=' https://github.com/kottarivaibhav' target="_blank" rel="noopener noreferrer"><img src={Github} className='w-10' /></a>
-            </li>
-            <li>
-              <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr' target="_blank" rel="noopener noreferrer"><img src={Instagram} className='w-10' /></a>
-            </li>
-            <li>
-              <a href='https://www.linkedin.com/in/vaibhav-kottari/' target="_blank" rel="noopener noreferrer"><img src={linkedin} className='w-10' /></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
+      <footer>
+  <div className='container m-auto flex flex-col items-center p-25 mb-'>
+    <div>
+      <p className=''></p>
+    </div>
+    <div className='text-center'>
+      
+      <p className='text-sm'></p>
+    </div>
+    <ul className='flex gap-4 mt-2 mb-1'>
+      <li>
+        <a href='https://github.com/kottarivaibhav' target="_blank" rel="noopener noreferrer">
+          <img src={Github} className='w-10' />
+        </a>
+      </li>
+      <li>
+        <a href='https://www.instagram.com/__vaibhavkottari__?utm_source=qr' target="_blank" rel="noopener noreferrer">
+          <img src={Instagram} className='w-10' />
+        </a>
+      </li>
+      <li>
+        <a href='https://www.linkedin.com/in/vaibhav-kottari/' target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} className='w-10' />
+        </a>
+      </li>
+    </ul>
+    <p className='text-2xl font-mono'>Copyright @ 2024||Designed by Vaibhav Ramachandra Kottari</p>
+  </div>
+</footer>
+      </div>
     </>
   )
 }

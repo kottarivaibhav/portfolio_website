@@ -1,77 +1,193 @@
-body{
-  background-color: rgba(6, 11, 22, 0.937);
-  color: white;
+/* General body styles */
+body {
+  background-color: rgba(6, 11, 22, 0.937); /* Dark background color */
+  color: white; /* White text color */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.gradient-text{
-  -webkit-background-clip: text;
-  @apply bg-gradient-to-t  from-blue-500 to-cyan-300 text-transparent;
-}
-.c_text{
-  
-  font-size: 12px/* 14px */;
-  line-height: 1.25rem/* 20px */;
 
+
+/* Gradient text effect */
+.gradient-text {
+  -webkit-background-clip: text; /* Clip background to text */
+  @apply bg-gradient-to-t from-blue-500 to-cyan-300 text-transparent; /* Gradient color from blue to cyan */
 }
+
+/* Custom font size and line height */
+.c_text {
+  font-size: 12px; /* Font size (adjustable) */
+  line-height: 1.25rem; /* Line height (adjustable) */
+}
+
+/* Header styles */
 header {
-  background-color: #5bcede; /* White-gray background */
-  color: rgb(255, 255, 255); /* Black text */
-  position: sticky; /* Sticky positioning */
+  background-color: #5bcede; /* Light blue background for header */
+  color: rgb(255, 255, 255); /* White text color */
+  position: sticky; /* Sticky positioning to stay at the top */
   top: 0; /* Stick to the top */
-  z-index: 1000; /* Ensure it stays above other content */
+  z-index: 1000; /* Ensure header stays above other content */
 }
 
-footer{
-  background-color: #5bcede; 
-  color: rgb(255, 255, 255);
-  
+/* Container for section content */
+.section-container {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 2rem 0; /* Padding around the section */
 }
 
-/* mobile responsive part */
-/* Base styles */
+/* Header styling within sections */
+.section-header {
+  font-size: 2rem; /* Font size for section headers */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Space below the header */
+}
 
+/* Content width and max-width */
+.section-content {
+  width: 80%; /* 80% width of parent */
+  max-width: 800px; /* Maximum width of 800px */
+}
 
+/* Styling for h2 headers */
+h2 {
+  margin-bottom: 1rem; /* Space below h2 elements */
+}
+
+/* Underline effect for headers */
+.underline-header {
+  background: linear-gradient(90deg, #e8f3f3, #ffffff); /* Gradient background for underline */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+  font-weight: bold; /* Bold text */
+}
+
+/* Custom font family */
+.custom-font {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font family */
+}
+
+/* Text shadow effect */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow behind text */
+  padding: 10px; /* Padding around text */
+}
+
+/* Icon styles */
+.custom-icon {
+  background-color: #070530; /* Dark background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
+  border: 2px solid #e0e0e0; /* Light grey border */
+}
+
+/* Hover effect for icons */
+.custom-icon:hover {
+  transform: translateY(-5px); /* Lift icon on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  border-color: #b0b0b0; /* Darker grey border on hover */
+}
+
+/* Alternative icon style */
+.custom-icon-1 {
+  background-color: #77bbe2; /* Light blue background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
+  border: 2px solid #e0e0e0; /* Light grey border */
+}
+
+/* Hover effect for alternative icons */
+.custom-icon-1:hover {
+  transform: translateY(-5px); /* Lift icon on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  border-color: #b0b0b0; /* Darker grey border on hover */
+}
+
+/* Container for main content */
+.container {
+  max-width: 1200px; /* Maximum width of 1200px */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+/* Footer styles */
+footer {
+  background-color: #5bcede; /* Light blue background */
+  color: rgb(255, 255, 255); /* White text color */
+}
+
+/* Underline effect for headers */
+.underline-header {
+  border-bottom: 2px solid #000; /* Solid black underline */
+  padding-bottom: 4px; /* Space between text and underline */
+}
+
+/* Skill item styles */
+.skill-item {
+  font-weight: bold; /* Bold text */
+  position: relative; /* Relative positioning for the circle */
+  padding-left: 2rem; /* Space for the circle */
+}
+
+/* Circle indicator for skill items */
+.skill-item::before {
+  content: ''; /* Empty content for the circle */
+  width: 1.5em; /* Circle width */
+  height: 1.5em; /* Circle height */
+  background: linear-gradient(to top, #00f, #0ff); /* Gradient color for the circle */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute; /* Absolute positioning */
+  left: 0; /* Align to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+}
+
+/* Button styles */
 .buttons button:first-of-type {
-  background: linear-gradient(to top, #007bff, #00c6ff);
+  background: linear-gradient(to top, #007bff, #00c6ff); /* Gradient background */
 }
 
 .buttons button:first-of-type:hover {
-  background: linear-gradient(to top, #0056b3, #0093d6);
+  background: linear-gradient(to top, #0056b3, #0093d6); /* Darker gradient on hover */
 }
 
 .buttons button:last-of-type {
-  background: #fff;
-  border: 1px solid #007bff;
-  color: #007bff;
+  background: #fff; /* White background */
+  border: 1px solid #007bff; /* Blue border */
+  color: #007bff; /* Blue text */
 }
 
 .buttons button:last-of-type:hover {
-  background: #007bff;
-  color: #fff;
+  background: #007bff; /* Blue background on hover */
+  color: #fff; /* White text on hover */
 }
 
-/* Responsive styles */
+/* Responsive styles for different screen sizes */
 @media (min-width: 640px) {
   .projects-grid {
-    grid-template-columns: repeat(1, 1fr);
-    flex-direction: column-reverse;
+    grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
+    flex-direction: column-reverse; /* Reverse column order */
   }
 }
 
 @media (min-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Single column layout for large screens */
   }
 
   .projects-section h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Font size for section headers */
   }
 
   .project-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Font size for project titles */
   }
 
   .project-card p {
-    font-size: 1rem;
+    font-size: 1rem; /* Font size for project descriptions */
   }
 }
