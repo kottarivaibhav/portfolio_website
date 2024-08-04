@@ -9,7 +9,7 @@ const Header = () => {
           <div>
             <h1 className="font-extrabold text-2xl">Vaibhav Kottari's Portfolio</h1>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center space-x-4">
             <ul className="flex gap-4">
               <li>
                 <a className="text-white hover:text-black cursor-pointer" href="#Projects">Projects</a>

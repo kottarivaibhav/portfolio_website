@@ -5,18 +5,19 @@ import Github from '../assets/github-mark-white.svg'; // Adjust the path accordi
 import Instagram from '../assets/instagram.svg'; // Adjust the path according to your project structure
 import LinkedIn from '../assets/linkedin.svg'; // Adjust the path according to your project structure
 
+
 const Footer = () => {
   return (
     <footer>
-      <div className='container m-auto flex flex-col items-center p-6 mb-6'>
+      <div className='container m-auto flex flex-col items-center p-3'>
         <div>
           {/* You can add a footer message or logo here if needed */}
-          <p></p>
+          
         </div>
         <div className='text-center'>
           <p className='text-sm'></p>
         </div>
-        <ul className='flex gap-4 mt-2 mb-1'>
+        <ul className='flex gap-4 mt-2 mb-1 space-x-4'>
           <li>
             <a href='https://github.com/kottarivaibhav' target="_blank" rel="noopener noreferrer">
               <img src={Github} className='w-10' alt="GitHub" />
