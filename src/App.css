@@ -28,6 +28,8 @@ header {
   z-index: 1000; /* Ensure header stays above other content */
 }
 
+
+
 /* Container for section content */
 .section-container {
   display: flex; /* Flexbox layout */
