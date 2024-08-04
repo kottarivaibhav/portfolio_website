@@ -1,5 +1,5 @@
 /* General body styles */
-body {
+body,html {
   background-color: rgba(6, 11, 22, 0.937); /* Dark background color */
   color: white; /* White text color */
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -168,28 +168,39 @@ footer {
   color: #fff; /* White text on hover */
 }
 
-/* Responsive styles for different screen sizes */
-@media (min-width: 640px) {
-  .projects-grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column layout for small screens */
-    flex-direction: column-reverse; /* Reverse column order */
+/* Add this to your CSS file */
+@media (max-width: 375px) {
+  .project-section .flex {
+    flex-direction: column;
+  }
+
+  .project-section .flex > div {
+    width: 100%;
   }
 }
-
-@media (min-width: 1024px) {
-  .projects-grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column layout for large screens */
+@media (max-width: 375px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .projects-section h2 {
-    font-size: 2rem; /* Font size for section headers */
+  
+  header .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
   }
-
-  .project-card h3 {
-    font-size: 1.5rem; /* Font size for project titles */
+  
+  header .nav-links a {
+    margin: 5px 0;
   }
-
-  .project-card p {
-    font-size: 1rem; /* Font size for project descriptions */
+}
+@media (max-width: 375px) {
+  footer {
+    padding: 10px;
+  }
+  
+  footer .social-icons {
+    flex-direction: column;
+    align-items: center;
   }
 }
