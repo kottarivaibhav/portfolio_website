@@ -10,8 +10,8 @@ This is my - Vaibhav Kottari's Portfolio Website<br>
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Firebase Setup](#firebase-setup)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -67,6 +67,23 @@ npm run build
 ```
 This will create an optimized production build in the build folder.
 
+## Firebase Setup
+1. Create a Firebase project in the Firebase Console.
+
+2. Add a web app to your Firebase project.
+
+3. Copy the Firebase configuration and replace the placeholder in your project.
+
+4. Create a .env file in the root of your project and add your Firebase configuration:
+
+```bash
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+```
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to create an issue or submit a pull request.
