@@ -9,11 +9,11 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky-header">
+    <header className='header-1'>
       <div className="container m-auto px-5 py-4">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between ">
           <div className="logo">
-            <h1 className="font-extrabold text-2xl">Vaibhav Kottari</h1>
+            <h1 className="font-extrabold text-2xl" id="#home"><a href='#home'>Vaibhav Kottari - <span className='text-large'>My personal Website </span></a></h1>
           </div>
           <button className="menu-toggle" onClick={toggleMenu}>
             <span className="menu-icon">&#9776;</span> {/* Hamburger icon */}

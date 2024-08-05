@@ -27,7 +27,7 @@ const certifications = [
   {
     img: certification4,
     title: 'Microsoft Excel Basic to Advance',
-    description: 'In this course, I learned essential Excel equations, shortcuts, and hands-on techniques, including creating analytical dashboards and data filtration. I gained practical skills in conditional formatting, data validation, and chart creation, all without needing prior knowledge.',
+    description: 'In this course, I learned essential Excel equations, shortcuts, and hands-on techniques, including creating analytical dashboards and data filtration. I gained practical skills in conditional formatting, data validation, and chart creation, which has equipped me with all the essentials of MS-Excel  ',
     link: 'https://www.udemy.com/certificate/UC-3f15e2df-6ea5-4781-b95c-0ef934badc5c/'
   }
 ];
@@ -50,7 +50,7 @@ const CertificationCarousel = () => {
       <h2 className="text-4xl font-bold underline-header text-center mb-4">Certifications</h2>
         <Slider {...settings}>
           {certifications.map((cert, index) => (
-            <div key={index} className='flex flex-col items-center border rounded-md glow-effect'>
+            <div key={index} className='flex flex-col items-center border rounded-md glow-effect align-middle'>
               <img src={cert.img} alt={cert.title} className=" mr-10 ml-40 w-80  mb-4" />
               <div className="flex flex-col justify-between h-full p-4">
                 <div>
@@ -58,8 +58,11 @@ const CertificationCarousel = () => {
                   <p className="text-gray-700 mt-2">{cert.description}</p>
                 </div>
                 <div className="flex justify-center mt-4">
-                  <a href={cert.link} target='_blank' rel='noopener noreferrer' className="text-blue-500 hover:underline">View Certification</a>
-                </div>
+  <button className="bg-grey-100 text-white font-semibold py-2 px-4 rounded-2xl shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300">
+    <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-white no-underline">View Certification</a>
+  </button>
+</div>
+
               </div>
             </div>
 

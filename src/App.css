@@ -22,8 +22,8 @@ body,html {
 .custom-cursor {
   position: fixed;
   pointer-events: none;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.7);
   mix-blend-mode: difference;
@@ -36,10 +36,10 @@ body,html {
 .custom-cursor::before {
   content: '';
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 70px;
+  height: 50px;
   background: rgba(0, 0, 255, 0.7);
-  border-radius: 50%;
+  border-radius: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,15 +49,15 @@ body,html {
 .custom-cursor::after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   width: 100px;
-  height: 100px;
+  height: 150px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 0, 255, 0.8) 0%, rgba(0, 0, 255, 0) 80%);
   transform: translate(-50%, -50%);
   pointer-events: none;
-  animation: sparkle 1.5s infinite alternate;
+  animation: sparkle 0.7s infinite alternate;
 }
 
 /* Keyframes for sparkling effect */
@@ -87,14 +87,20 @@ body,html {
 }
 
 /* Header styles */
-header {
+.header-1 {
   background-color: #5bcede; /* Light blue background for header */
   color: rgb(255, 255, 255); /* White text color */
-  position: sticky; /* Sticky positioning to stay at the top */
-  top: 0; /* Stick to the top */
-  z-index: 1000; /* Ensure header stays above other content */
+  position: sticky;  
+  width:100%;  
+  top:0;  
+  margin: 0;  
+  padding: 0px;  
+  overflow: hidden;; /* Sticky positioning to stay at the top */
+   /* Stick to the top */
+   /* Ensure header stays above other content */
   transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
 }
+
 
 /* Container inside the header */
 .container {
@@ -209,7 +215,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #00ffff; /* Light blue cursor effect */
-  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 7s steps(40, end), blink-caret 0.75s infinite;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
 }
 
