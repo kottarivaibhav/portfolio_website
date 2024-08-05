@@ -90,14 +90,32 @@ body,html {
 header {
   background-color: #5bcede; /* Light blue background for header */
   color: rgb(255, 255, 255); /* White text color */
-  position:sticky; /* Sticky positioning to stay at the top */
+  position: sticky; /* Sticky positioning to stay at the top */
   top: 0; /* Stick to the top */
   z-index: 1000; /* Ensure header stays above other content */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
 }
 
-/* Default header styles */
+/* Container inside the header */
+.container {
+  max-width: 1200px; /* Set a max-width for large screens */
+  margin: 0 auto;
+  padding: 0 20px; /* Adjust padding as needed */
+}
 
+/* Flexbox for Header Layout */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* Logo */
+.logo {
+  font-size: 1.5rem; /* Adjust font size for the logo */
+}
+
+/* Menu Toggle Button */
 .menu-toggle {
   display: none; /* Hidden by default on large screens */
   background: none;
@@ -105,10 +123,6 @@ header {
   font-size: 24px;
   color: white;
   cursor: pointer;
-}
-
-.menu-icon {
-  font-size: 24px;
 }
 
 /* Mobile Menu Styles */
@@ -138,47 +152,40 @@ header {
   margin: 10px 0; /* Spacing between items */
 }
 
+/* Navigation Link Styles */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #ddd; /* Change color on hover */
+}
+
 /* Show the menu toggle button on small screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: contents;
+    font-size: small;
+  }
+
+  .container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-links {
+    top: 60px; /* Adjust based on header height */
+    background-color: #333; /* Dark background for mobile menu */
+  }
+
+  .logo {
+    font-size: 1.5rem; /* Smaller font size for mobile devices */
   }
 }
 
 /* Show the navigation links on larger screens */
-@media (min-width: 769px) {
-  .menu-toggle {
-    display: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    position: static;
-    width: auto;
-    padding: 0;
-    background-color: transparent; /* Background color set to transparent */
-    text-align: left; /* Align text to the left on larger screens */
-  }
 
-  .nav-links ul {
-    flex-direction: row;
-  }
-
-  .nav-links li {
-    margin: 0 10px; /* Spacing between items */
-  }
-}
-
-/* Container for section content */
-.section-container {
-  display: flex; /* Flexbox layout */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  text-align: center; /* Center text */
-  margin: 0 auto; /* Center container horizontally */
-  padding: 2rem 0; /* Padding around the section */
-}
 
 /* Header styling within sections */
 .section-header {
