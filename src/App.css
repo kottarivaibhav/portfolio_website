@@ -88,107 +88,44 @@ body,html {
 
 /* Header styles */
 .header-1 {
-  background-color: #5bcede; /* Light blue background for header */
-  color: rgb(255, 255, 255); /* White text color */
-  position: sticky;  
-  width:100%;  
-  top:0;  
-  margin: 0;  
-  padding: 0px;  
-  overflow: hidden;; /* Sticky positioning to stay at the top */
-   /* Stick to the top */
-   /* Ensure header stays above other content */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+  background-color: #7ce0fc; /* Background color for the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for the header */
+  position: sticky; /* Makes the header sticky */
+  top: 10; /* Sticks the header to the top */
+   /* Ensures the header stays on top of other content */
 }
 
-
-/* Container inside the header */
-.container {
-  max-width: 1200px; /* Set a max-width for large screens */
-  margin: 0 auto;
-  padding: 0 20px; /* Adjust padding as needed */
-}
-
-/* Flexbox for Header Layout */
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo */
-.logo {
-  font-size: 1.5rem; /* Adjust font size for the logo */
-}
-
-/* Menu Toggle Button */
 .menu-toggle {
-  display: none; /* Hidden by default on large screens */
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
+  display: block; /* Always show the menu toggle button */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-/* Mobile Menu Styles */
+.menu-icon {
+  font-size: 1.5rem; /* Size of the hamburger icon */
+}
+
 .nav-links {
-  display: none; /* Hidden by default on small screens */
-  position: absolute;
-  top: 60px; /* Adjust based on header height */
-  right: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: #333; /* Adjust to match your header background */
-  text-align: center;
+  display: none; /* Hide the nav links by default */
 }
 
 .nav-links.open {
-  display: block;
+  display: block; /* Show the nav links when the menu is open */
+}
+
+.nav-link {
+  text-align: center;
+  text-decoration: none; /* Remove underline from nav links */
+  color: #333; /* Nav link color */
+  font-size: 1.5rem; /* Font size for nav links */
 }
 
 .nav-links ul {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+  list-style:disc;
+  display: flex; /* Display nav links as flex */
+  flex-direction: column; /* Stack nav links vertically */
+  gap: 1rem; /* Gap between nav links */
 }
 
-.nav-links li {
-  margin: 10px 0; /* Spacing between items */
-}
-
-/* Navigation Link Styles */
-.nav-link {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s; /* Smooth color transition */
-}
-
-.nav-link:hover {
-  color: #ddd; /* Change color on hover */
-}
-
-/* Show the menu toggle button on small screens */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: contents;
-    font-size:xx-large;
-  }
-
-  .container {
-    padding: 0 10px; /* Adjust padding for smaller screens */
-  }
-
-  .nav-links {
-    top: 60px; /* Adjust based on header height */
-    background-color: #333; /* Dark background for mobile menu */
-  }
-
-  .logo {
-    font-size: 1.5rem; /* Smaller font size for mobile devices */
-  }
-}
 
 /* Show the navigation links on larger screens */
 
