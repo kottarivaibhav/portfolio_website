@@ -167,7 +167,7 @@ header {
 @media (min-width: 768px) {
   .menu-toggle {
     display: contents;
-    font-size: small;
+    font-size:xx-large;
   }
 
   .container {
