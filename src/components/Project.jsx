@@ -9,7 +9,7 @@ const ProjectSection = () => {
   return (
     <section className='mt-4 mr-3 p-6' id='Projects'>
       <div className='container mx-auto px-4'>
-        <h2 className="text-4xl font-bold underline-header">Projects</h2>
+        <h2 className="text-4xl font-bold underline-header text-center">Projects</h2>
         <div className='flex flex-col gap-5 mt-5 md:flex-row md:flex-wrap'>
           {/* Project 1 */}
           <div className='flex-1 border rounded-md p-5 flex flex-col md:w-1/3'>

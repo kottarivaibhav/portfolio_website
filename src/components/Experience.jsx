@@ -4,9 +4,9 @@ import React from 'react';
 
 const ExperienceSection = () => {
   return (
-    <section className="mt-4 mb-7 mr-3 p-6">
+    <section className="mt-4 mb-7 mr-3 p-6 " id="Experiences">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold underline-header">Internship Experience</h2>
+        <h2 className="text-4xl font-bold underline-header text-center">Internship Experience</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left Column */}
           <div className="flex flex-col justify-center mt-7">

@@ -1,16 +1,14 @@
-// src/components/CertificationCarousel.jsx
-
 import React from 'react';
 import Slider from 'react-slick';
-import certification1 from '../assets/certificate_1.png'; // Update with actual paths
-import certification2 from '../assets/certificate_2.png'; // Update with actual paths
+import certification1 from '../assets/certificate_1.png';
+import certification2 from '../assets/certificate_2.png';
 import certification3 from '../assets/certificate_3.png';
 import certification4 from '../assets/certificate_4.png'; 
 
 const certifications = [
   {
     img: certification1,
-    title: 'Meta Front End Developer Certicate',
+    title: 'Meta Front End Developer Certificate',
     description: 'I developed responsive websites using HTML, CSS, and JavaScript, mastering React, Bootstrap, and GitHub version control. This experience enhanced my skills in UI/UX design and web development, preparing me to create user-friendly web applications and portfolio-ready projects for coding interviews.',
     link: 'https://www.coursera.org/account/accomplishments/professional-cert/J9H3E9WSM7TK'
   },
@@ -39,26 +37,32 @@ const CertificationCarousel = () => {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2, // Show 2 items at a time
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    centerMode: true, // Center the slides
+    centerMode: true,
   };
 
   return (
-    <section className='mt-4 mb-0 p-6' id='Certifications'>
-      <div className='container mb-9 px-4'>
-        <h2 className="text-4xl font-bold underline-header ">Certifications</h2>
+    <section className='mt-4 p-6 items-center' id='Certifications'>
+      <div className='container mx-auto px-4'>
+      <h2 className="text-4xl font-bold underline-header text-center mb-4">Certifications</h2>
         <Slider {...settings}>
           {certifications.map((cert, index) => (
             <div key={index} className='flex flex-col items-center border rounded-md glow-effect'>
-              <img src={cert.img} alt={cert.title} className="w-60 h-auto mb-4" style={{ display: 'block', margin: '0 auto' }} /> {/* Center image */}
-              <h3 className="text-2xl font-semibold">{cert.title}</h3>
-              <p className="text-gray-700 mt-2">{cert.description}</p>
-              <button className="glow-button"><a href={cert.link} target='_blank' rel='noopener noreferrer' className="text-blue-500 mt-4 hover:underline">View Certification</a>
-              </button>
+              <img src={cert.img} alt={cert.title} className=" mr-10 ml-40 w-80  mb-4" />
+              <div className="flex flex-col justify-between h-full p-4">
+                <div>
+                  <h3 className="text-2xl font-semibold text-center">{cert.title}</h3>
+                  <p className="text-gray-700 mt-2">{cert.description}</p>
+                </div>
+                <div className="flex justify-center mt-4">
+                  <a href={cert.link} target='_blank' rel='noopener noreferrer' className="text-blue-500 hover:underline">View Certification</a>
+                </div>
+              </div>
             </div>
+
           ))}
         </Slider>
       </div>

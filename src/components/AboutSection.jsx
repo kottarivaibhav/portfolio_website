@@ -6,7 +6,7 @@ const AboutMeSection = () => {
   return (
     <section className="mt-4 mr-3 p-6" id="About">
       <div className="container m-auto px-4">
-        <h2 className="text-4xl font-bold underline-header">About me</h2>
+        <h2 className="text-4xl font-bold underline-header text-center">About me</h2>
         <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
           <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
             <p>

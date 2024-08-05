@@ -1,6 +1,15 @@
 /* General body styles */
 
-
+section {
+  background-color: rgb(15, 30, 48); /* Dark background color */
+  padding: 20px; /* Add padding inside the section */
+  border-radius: 8px; /* Rounded corners */
+  margin: 20px 0; /* Margin above and below each section */
+  border-right: 3px solid #00ffff; /* Right border color */
+  border-left: 3px solid #00ffff; /* Left border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual separation */
+  color: white; /* White text color */
+}
 
 body,html {
   background-color: rgba(6, 11, 22, 0.937); /* Dark background color */
@@ -81,12 +90,84 @@ body,html {
 header {
   background-color: #5bcede; /* Light blue background for header */
   color: rgb(255, 255, 255); /* White text color */
-  position: sticky; /* Sticky positioning to stay at the top */
+  position:sticky; /* Sticky positioning to stay at the top */
   top: 0; /* Stick to the top */
   z-index: 1000; /* Ensure header stays above other content */
 }
 
+/* Default header styles */
 
+
+.menu-toggle {
+  display: none; /* Hidden by default on large screens */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+/* Mobile Menu Styles */
+.nav-links {
+  display: none; /* Hidden by default on small screens */
+  position: absolute;
+  top: 60px; /* Adjust based on header height */
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #333; /* Adjust to match your header background */
+  text-align: center;
+}
+
+.nav-links.open {
+  display: block;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 10px 0; /* Spacing between items */
+}
+
+/* Show the menu toggle button on small screens */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Show the navigation links on larger screens */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+    background-color: transparent; /* Background color set to transparent */
+    text-align: left; /* Align text to the left on larger screens */
+  }
+
+  .nav-links ul {
+    flex-direction: row;
+  }
+
+  .nav-links li {
+    margin: 0 10px; /* Spacing between items */
+  }
+}
 
 /* Container for section content */
 .section-container {
@@ -388,11 +469,7 @@ footer {
   align-items: center; /* Center slides vertically */
 }
 
-.slick-slide {
-  margin:0 2px;
-  margin-bottom: 0%;
-   /* Adjust to your preferred spacing */
-}
+
 
 .slick-dots {
   bottom: -30px; /* Adjust dots position */
@@ -402,6 +479,29 @@ footer {
   font-size: 24px; /* Optional: adjust arrow size */
   color: #000; /* Optional: change arrow color */
 }
+
+.banner {
+  width: 100%;
+}
+
+.banner .relative img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .banner .relative img {
+    width: 100%;
+    text-align: left;
+  }
+
+  .banner .relative img:last-child {
+    width: 100%;
+  }
+}
+
+
+
+
 
 
 
@@ -447,3 +547,4 @@ footer {
     align-items: center;
   }
 }
+

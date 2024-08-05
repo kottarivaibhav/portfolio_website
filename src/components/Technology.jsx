@@ -8,7 +8,7 @@ const TechnSection = () => {
   return (
     <section className='mt-4 mr-3 p-6' id='Technology'>
       <div className='container m-auto px-10 '>
-        <h2 className="text-4xl font-bold underline-header">Technologies Known</h2>
+        <h2 className="text-4xl font-bold underline-header text-center">Technologies Known</h2>
       </div>
       <div className='mt-6'>
         <div className='container m-auto px-10'>
