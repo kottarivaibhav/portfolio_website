@@ -3,6 +3,12 @@
 This is my - Vaibhav Kottari's Portfolio Website<br>
     https://kottarivaibhav.github.io/portfolio_website/
 
+## Video Overview
+
+Check out this video for a quick overview of the project:
+
+[![Project Overview](https://img.youtube.com/vi/nR9TlYQ4k7U/0.jpg)](https://youtu.be/nR9TlYQ4k7U)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
