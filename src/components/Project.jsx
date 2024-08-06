@@ -6,7 +6,7 @@ import project4 from '../assets/Project_4.png'; // Update the import path for th
 
 const ProjectSection = () => {
   return (
-    <section className='mt-4 mr-3 p-6' id='Projects'>
+    <section className='mt-4 mr-3 p-6 bg-gradient-animation' id='Projects'>
       <div className='container mx-auto px-4'>
         <h2 className="text-4xl font-bold underline-header text-center">Projects</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5'>
@@ -17,10 +17,10 @@ const ProjectSection = () => {
               <h3 className="text-2xl font-semibold mt-4">Event Management</h3>
               <p className="text-gray-400 text-sm mt-2 flex-grow">This project was part of my DBMS mini project where I developed a system for managing college events.</p>
               <div className="mt-auto flex gap-2">
-                <button className="flex-1 text-sm mt-2 py-4 px-2  bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <button className="flex-1 text-sm mt-2 py-4 px-2 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://github.com/kottarivaibhav/dbms_mini_project' target='_blank' rel='noopener noreferrer'>Live preview</a>
                 </button>
-                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://github.com/kottarivaibhav/dbms_mini_project' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
                 </button>
               </div>
@@ -33,10 +33,10 @@ const ProjectSection = () => {
               <h3 className="text-2xl font-semibold mt-4">Little Lemon Restaurant</h3>
               <p className="text-gray-400 text-sm mt-2 flex-grow">This was my Capstone Project from Meta Front End Developer Path. I used React Framework for this Project.</p>
               <div className="mt-auto flex gap-2">
-                <button className="flex-1 text-sm mt-2 py-4 px-2 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <button className="flex-1 text-sm mt-2 py-4 px-2 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://kottarivaibhav.github.io/meta_front_end_developer_capstone/' target='_blank' rel='noopener noreferrer'>Live preview</a>
                 </button>
-                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://github.com/kottarivaibhav/meta_front_end_developer_capstone' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
                 </button>
               </div>
@@ -49,10 +49,10 @@ const ProjectSection = () => {
               <h3 className="text-2xl font-semibold mt-4">Pizza E-commerce</h3>
               <p className="text-gray-400 text-sm mt-2 flex-grow">Responsive HTML/CSS layout for online Pizza ordering website using HTML5, CSS3 (SCSS)</p>
               <div className="mt-auto flex gap-2">
-                <button className="flex-1 text-sm mt-2 py-4 px-2  bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <button className="flex-1 text-sm mt-2 py-4 px-2 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://kottarivaibhav.github.io/Ecommerce_PizzaStore/' target='_blank' rel='noopener noreferrer'>Live Preview</a>
                 </button>
-                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500 transform transition-transform duration-300 hover:scale-105">
                   <a href='#' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
                 </button>
               </div>
@@ -65,10 +65,10 @@ const ProjectSection = () => {
               <h3 className="text-2xl font-semibold mt-4">Sentiment Analysis</h3>
               <p className="text-gray-400 text-sm mt-2 flex-grow">This project is a web application for sentiment analysis. It allows users to input text and receive a sentiment analysis score indicating whether the sentiment is positive, negative, or neutral.</p>
               <div className="mt-auto flex gap-2">
-                <button className="flex-1 text-sm mt-2 py-4 px-2  bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                <button className="flex-1 text-sm mt-2 py-4 px-2 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://sentiment-analysis-ngla.onrender.com/' target='_blank' rel='noopener noreferrer'>Live Preview</a>
                 </button>
-                <button className="flex-1 text-sm mt-1 py-2 px-2  border rounded-full hover:border-blue-500 hover:text-blue-500">
+                <button className="flex-1 text-sm mt-1 py-2 px-2 border rounded-full hover:border-blue-500 hover:text-blue-500 transform transition-transform duration-300 hover:scale-105">
                   <a href='https://github.com/kottarivaibhav/Sentiment_Analysis' target='_blank' rel='noopener noreferrer'>Checkout GitHub</a>
                 </button>
               </div>
@@ -79,5 +79,7 @@ const ProjectSection = () => {
     </section>
   );
 };
+
+
 
 export default ProjectSection;

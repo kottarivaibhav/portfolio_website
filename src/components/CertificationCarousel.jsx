@@ -37,7 +37,7 @@ const CertificationCarousel = () => {
     dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -58,8 +58,8 @@ const CertificationCarousel = () => {
                   <p className="text-gray-700 mt-2">{cert.description}</p>
                 </div>
                 <div className="flex justify-center mt-4">
-  <button className="bg-grey-100 text-white font-semibold py-2 px-4 rounded-2xl shadow-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 transition duration-300">
-    <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-white no-underline">View Certification</a>
+  <button className="bg-gradient-to-r from-white to-blue-500 text-blue-700 font-semibold py-2 px-6 rounded-full shadow-xl hover:from-blue-500 hover:to-white hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 transition duration-300 transform hover:scale-105">
+    <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-inherit no-underline">View Certification</a>
   </button>
 </div>
 
