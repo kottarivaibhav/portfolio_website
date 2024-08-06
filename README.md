@@ -28,11 +28,14 @@ This is a personal portfolio website built using React. It showcases my projects
 
 ## Technologies Used
 
-- React
+- React | Vite
 - React Router
-- CSS (or any CSS-in-JS library you prefer)
+- CSS | Tailwind 
 - Node.js
 - npm
+- Firebase
+- GitHub Pages
+
 
 ## Installation
 

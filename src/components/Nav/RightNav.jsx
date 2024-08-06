@@ -50,7 +50,7 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <li><a href="#Projects">Projects</a></li>
       <li><a href="#Technology">Technology</a></li>
-      <li><a href="#About Me">About Me</a></li>
+      <li><a href="#About">About Me</a></li>
       <li><a href="#Experiences">Experiences</a></li>
       <li><a href="#Certifications">Certifications</a></li>
       <li><a href="#FeedbackForm">Contact us</a></li>
