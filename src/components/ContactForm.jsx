@@ -4,9 +4,9 @@ import { collection, addDoc } from 'firebase/firestore';
 import './ContactForm.css'; // Import the CSS file
 
 const ContactForm = () => {
-  const [name, setName] = useState('Enter your Name');
-  const [email, setEmail] = useState('Enter your vaild Email-id');
-  const [message, setMessage] = useState('Please share your Message');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import SwirlCursorEffect from './components/SwirlCursorEffect';
-import Header from './components/Header';
+import Navbar from './components/Nav/Navbar';
 import BannerSection from './components/Banner';
 import ProjectSection from './components/Project';
 import TechSection from './components/Technology';
@@ -15,9 +15,10 @@ import ContactForm from './components/ContactForm'; // Import ContactForm Compon
 function App() {
   return (
     <>
-    <SwirlCursorEffect />
+      <SwirlCursorEffect />
+      <Navbar />
       <div className=''>
-        <Header />
+        
         <main className="relative mt-10 justify-normal left-4 right-1">
           <BannerSection />
           <ProjectSection />
