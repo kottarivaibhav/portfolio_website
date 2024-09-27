@@ -101,7 +101,7 @@ Contributions are welcome! If you have any suggestions or improvements, feel fre
 ## Contact
 You can reach me at:
 
-Email: vaibhav@example.com
+Email: [kottarivaibhav@gmail.com](kottarivaibhav@gmail.com)
 
 LinkedIn: [Vaibhav Kottari](https://www.linkedin.com/in/vaibhav-kottari/)
 
