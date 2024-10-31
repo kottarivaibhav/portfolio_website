@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <div className=''>
         
-        <main className="relative mt-10 justify-normal left-4 right-1">
+      <main className="mt-10 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2 left-4 right-1 sm:left-2 sm:right-0 flex flex-col space-y-4">
           <BannerSection />
           <ProjectSection />
           <TechSection />

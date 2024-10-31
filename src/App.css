@@ -15,7 +15,7 @@ body, html {
   background-color: rgba(6, 11, 22, 0.937); /* Dark background color */
   color: white; /* White text color */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y:visible;
+  overflow-y: visible;
   
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
@@ -34,49 +34,46 @@ body, html {
   text-rendering: optimizeLegibility; /* Improve text rendering */
 }
 
-/* src/App.css */
-
+/* Custom Cursor */
 .custom-cursor {
   position: fixed;
   pointer-events: none;
   width: 20px;
-  height: 20px; /* Corrected typo from '20x' to '20px' */
+  height: 20px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.7);
   mix-blend-mode: difference;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  overflow: visible; /* Corrected typo from 'visib' to 'visible' */
+  overflow: visible;
 }
 
-/* Core cursor */
 .custom-cursor::before {
   content: '';
   position: absolute;
-  width: 20px; /* Increased width */
-  height: 20px; /* Increased height */
-  background: rgba(0, 0, 255, 0.8); /* Increased opacity */
-  border-radius: 50%; /* Perfect circle */
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 255, 0.8);
+  border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centered the element */
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Added a subtle glow effect */
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
 }
 
-/* Sparkling effect */
 .custom-cursor::after {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px; /* Increased width */
-  height: 20px; /* Increased height */
-  border-radius: 50%; /* Perfect circle */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   background: radial-gradient(circle, rgba(0, 0, 255, 0.8) 20%, rgba(0, 0, 255, 0) 80%);
   transform: translate(-50%, -50%);
   pointer-events: none;
   animation: sparkle 0.7s infinite alternate;
-  box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); /* Added a more pronounced glow effect */
+  box-shadow: 0 0 15px rgba(0, 0, 255, 0.7);
 }
 
 @keyframes sparkle {
@@ -90,36 +87,29 @@ body, html {
 
 /* Gradient text effect */
 .gradient-text {
-  -webkit-background-clip: text; /* Clip background to text */
-  @apply bg-gradient-to-t from-blue-500 to-cyan-300 text-transparent; /* Gradient color from blue to cyan */
+  -webkit-background-clip: text;
+  @apply bg-gradient-to-t from-blue-500 to-cyan-300 text-transparent;
 }
 
 /* Custom font size and line height */
 .c_text {
-  font-size: 12px; /* Font size (adjustable) */
-  line-height: 1.25rem; /* Line height (adjustable) */
+  font-size: 12px;
+  line-height: 1.25rem;
 }
-
-
-/* Header Styles */
-
-
 
 /* Content width and max-width */
 .section-content {
-  width: 80%; /* 80% width of parent */
-  max-width: 800px; /* Maximum width of 800px */
+  width: 80%;
+  max-width: 800px;
 }
 
-
-/* src/App.css */
 /* This is for the Hello vaibhav Part */
 .heading {
   font-family: 'Courier New', Courier, monospace;
-  color: #eefdfd; /* Light blue text color */
+  color: #eefdfd;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #00ffff; /* Light blue cursor effect */
+  border-right: 3px solid #00ffff;
   animation: typing 7s steps(40, end), blink-caret 0.75s infinite;
   text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.4);
 }
@@ -134,270 +124,263 @@ body, html {
   50% { border-color: #00ffff; }
 }
 
-
 /* Styling for h2 headers */
 h2 {
-  margin-bottom: 1rem; /* Space below h2 elements */
+  margin-bottom: 1rem;
 }
 
 /* Underline effect for headers */
 .underline-header {
-  background: linear-gradient(90deg, #e8f3f3, #ffffff); /* Gradient background for underline */
-  -webkit-background-clip: text; /* Clip background to text */
-  -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
-  font-weight: bold; /* Bold text */
+  background: linear-gradient(90deg, #e8f3f3, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 /* Custom font family */
 .custom-font {
-  font-family: 'Roboto', sans-serif; /* Apply Roboto font family */
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Text shadow effect */
 .text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow behind text */
-  padding: 10px; /* Padding around text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
 
 /* Icon styles */
 .custom-icon {
-  background-color: #070530; /* Dark background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
-  border: 2px solid #e0e0e0; /* Light grey border */
+  background-color: #070530;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #e0e0e0;
 }
 
-/* Hover effect for icons */
 .custom-icon:hover {
-  transform: translateY(-5px); /* Lift icon on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  border-color: #b0b0b0; /* Darker grey border on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #b0b0b0;
 }
 
 /* Alternative icon style */
 .custom-icon-1 {
-  background-color: #77bbe2; /* Light blue background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions for hover effects */
-  border: 2px solid #e0e0e0; /* Light grey border */
+  background-color: #77bbe2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #e0e0e0;
 }
 
-/* Hover effect for alternative icons */
 .custom-icon-1:hover {
-  transform: translateY(-5px); /* Lift icon on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-  border-color: #b0b0b0; /* Darker grey border on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #b0b0b0;
 }
 
 /* Container for main content */
 .container {
-  max-width: 1200px; /* Maximum width of 1200px */
-  margin: 0 auto; /* Center container horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Footer styles */
 footer {
-  background-color: #5bcede; /* Light blue background */
-  color: rgb(255, 255, 255); /* White text color */
+  background-color: #5bcede;
+  color: rgb(255, 255, 255);
 }
 
 /* Underline effect for headers */
 .underline-header {
-  border-bottom: 2px solid #000; /* Solid black underline */
-  padding-bottom: 4px; /* Space between text and underline */
+  border-bottom: 2px solid #000;
+  padding-bottom: 4px;
 }
 
 /* Skill item styles */
 .skill-item {
-  font-weight: bold; /* Bold text */
-  position: relative; /* Relative positioning for the circle */
-  padding-left: 2rem; /* Space for the circle */
+  font-weight: bold;
+  position: relative;
+  padding-left: 2rem;
 }
 
-/* Circle indicator for skill items */
 .skill-item::before {
-  content: ''; /* Empty content for the circle */
-  width: 1.5em; /* Circle width */
-  height: 1.5em; /* Circle height */
-  background: linear-gradient(to top, #00f, #0ff); /* Gradient color for the circle */
-  border-radius: 50%; /* Make it a circle */
-  position: absolute; /* Absolute positioning */
-  left: 0; /* Align to the left */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for centering */
+  content: '';
+  width: 1.5em;
+  height: 1.5em;
+  background: linear-gradient(to top, #00f, #0ff);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Button styles */
 .buttons button:first-of-type {
-  background: linear-gradient(to top, #007bff, #00c6ff); /* Gradient background */
+  background: linear-gradient(to top, #007bff, #00c6ff);
 }
 
 .buttons button:first-of-type:hover {
-  background: linear-gradient(to top, #0056b3, #0093d6); /* Darker gradient on hover */
+  background: linear-gradient(to top, #0056b3, #0093d6);
 }
 
 .buttons button:last-of-type {
-  background: #fff; /* White background */
-  border: 1px solid #007bff; /* Blue border */
-  color: #007bff; /* Blue text */
+  background: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
 }
 
 .buttons button:last-of-type:hover {
-  background: #007bff; /* Blue background on hover */
-  color: #fff; /* White text on hover */
+  background: #007bff;
+  color: #fff;
 }
 
-/* src/App.css or src/components/CertificationCarousel.css */
-
+/* Custom carousel container */
 .custom-carousel-container {
-  max-width: 800px; /* Adjust container width */
-  margin: 0 auto; /* Center container */
+  max-width: 800px;
+  margin: 0 auto;
 }
-/* src/App.css */
 
+/* Next section */
 .next-section {
-  margin-top: 0; /* Remove or adjust top margin */
+  margin-top: 0;
 }
 
-
+/* Glow effect */
 .glow-effect {
-  background-color: #f0f0f0; /* Light gray background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2); /* Slight glow effect */
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: center; /* Center children vertically */
-  padding: 20px; /* Add padding inside the card */
-  text-align: center; /* Center text inside the card */
-  margin: 10px; /* Add margin for spacing between cards */
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
   margin-bottom: 0;
 }
 
 .glow-effect img {
   display: block;
-  margin: 0 auto; /* Center-align the image */
+  margin: 0 auto;
 }
 
 .glow-effect h3 {
-  color: black; /* Set title color to black */
-  margin-bottom: 10px; /* Space between title and description */
+  color: black;
+  margin-bottom: 10px;
 }
 
 .glow-effect p {
-  color: #333; /* Darker color for description */
-  margin-bottom: 10px; /* Space between description and link */
+  color: #333;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
 .glow-effect a {
-  color: #1d4ed8; /* Blue color for link */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease; /* Smooth color transition */
-  display: block; /* Make the link a block-level element for centering */
-  margin-top: 10px; /* Space above the link */
+  color: #1d4ed8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  margin-top: 10px;
 }
 
 .glow-effect a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
-/* src/App.css */
-
+/* Glow button */
 .glow-button {
-  background-color: #d9dff0; /* Light blue background */
-  color: #081018; /* Dark text color */
-  border: 2px solid #abb0b4; /* Dark border */
-  padding: 10px 20px; /* Increased padding for better spacing */
-  border-radius: 30px; /* Rounded corners */
-  font-size: 15px; /* Font size */
-  font-weight: 600; /* Semi-bold text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  display: inline-flex; /* Use inline-flex for better centering */
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  text-align: center; /* Center text */
-  margin: 10px 0; /* Space above and below the button */
-  text-decoration: none; /* Remove underline from link */
+  background-color: #d9dff0;
+  color: #081018;
+  border: 2px solid #abb0b4;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+  text-decoration: none;
 }
 
 .glow-button a {
-  color: #081018; /* Dark text color */
-  text-decoration: none; /* Remove underline from link */
+  color: #081018;
+  text-decoration: none;
 }
 
 .glow-button:hover {
-  background-color: #2563eb; /* Darker blue on hover */
-  color: white; /* White text on hover */
-  transform: translateY(-2px); /* Slightly lift button */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .glow-button:focus {
-  outline: none; /* Remove default focus outline */
-  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5); /* Blue glow on focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.5);
 }
 
+/* Slick slider */
 .slick-slider .slick-prev,
 .slick-slider .slick-next {
-  font-size: 24px; /* Adjust size */
-  color: #081018; /* Dark color for arrows */
-  width: 50px; /* Adjust width */
-  height: 50px; /* Adjust height */
-  line-height: 50px; /* Center text vertically */
-  text-align: center; /* Center text horizontally */
-  border-radius: 50%; /* Rounded shape */
-  background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  font-size: 24px;
+  color: #081018;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .slick-prev {
-  left: 10px; /* Position from left */
+  left: 10px;
 }
 
 .slick-next {
-  right: 10px; /* Position from right */
+  right: 10px;
 }
 
 .slick-prev:before {
-  content: '\f053'; /* Font Awesome icon for previous (Chevron Left) */
-  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
-  font-weight: 900; /* Set weight for icons */
+  content: '\f053';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 
 .slick-next:before {
-  content: '\f054'; /* Font Awesome icon for next (Chevron Right) */
-  font-family: 'Font Awesome 5 Free'; /* Font Awesome family */
-  font-weight: 900; /* Set weight for icons */
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
 }
 
 .slick-prev:hover, .slick-next:hover {
-  background: #081018; /* Darker background on hover */
-  color: #d9dff0; /* Light text color on hover */
-  transform: scale(1.1); /* Slightly scale up on hover */
+  background: #081018;
+  color: #d9dff0;
+  transform: scale(1.1);
 }
 
-/* */
 .slick-track {
-  display: flex; /* Align slides in a row */
-  align-items: center; /* Center slides vertically */
+  display: flex;
+  align-items: center;
 }
-
-
 
 .slick-dots {
-  bottom: -30px; /* Adjust dots position */
+  bottom: -30px;
 }
 
 .slick-prev, .slick-next {
-  font-size: 24px; /* Optional: adjust arrow size */
-  color: #000; /* Optional: change arrow color */
+  font-size: 24px;
+  color: #000;
 }
 
+/* Banner styles */
 .banner {
   width: 100%;
 }
@@ -405,29 +388,4 @@ footer {
 .banner .relative img {
   width: 100%;
 }
-
-@media (min-width: 667px) {
-  .banner .relative img {
-    width: 100%;
-    text-align: left;
-  }
-
-  .banner .relative img:last-child {
-    width: 80%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
