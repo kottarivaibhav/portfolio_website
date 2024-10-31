@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 
 
 const firebaseConfig = {
-  apiKey:"process.env.REACT_APP_API_KEY",
-  authDomain:"process.env.REACT_APP_AUTH_DOMAIN",
-  projectId:"process.env.REACT_APP_PROJECT_ID",
-  storageBucket:"process.env.REACT_APP_STORAGE_BUCKET",
-  messagingSenderId:"process.env.REACT_APP_MESSAGING_SENDER_ID",
-  appId:"process.env.REACT_APP_APP_ID",
-  measurementId:process.env.REACT_APP_MEASUREMENT_ID
+  apiKey: "AIzaSyBcIPL_Ni4tVO9dLRGXQVScuHS5nPrvNwo",
+  authDomain: "portfoliofeedback-fbc27.firebaseapp.com",
+  projectId: "portfoliofeedback-fbc27",
+  storageBucket: "portfoliofeedback-fbc27.appspot.com",
+  messagingSenderId: "417023353695",
+  appId: "1:417023353695:web:17558ac1998f841061ccea",
+  measurementId: "G-TZ6G2Q6F95"
 };
 
 // Initialize Firebase
