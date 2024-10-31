@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SwirlCursorEffect from './components/SwirlCursorEffect';
 import Navbar from './components/Nav/Navbar';
+
 import BannerSection from './components/Banner';
 import ProjectSection from './components/Project';
 import TechSection from './components/Technology';
@@ -13,13 +14,19 @@ import Footer from './components/Footer';
 import ContactForm from './components/ContactForm'; // Import ContactForm Component
 
 function App() {
+
+ 
   return (
+
+    
     <>
+    
       <SwirlCursorEffect />
       <Navbar />
-      <div className=''>
-        
+      <div className='relative'>
+      
       <main className="mt-10 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2 left-4 right-1 sm:left-2 sm:right-0 flex flex-col space-y-4">
+          
           <BannerSection />
           <ProjectSection />
           <TechSection />

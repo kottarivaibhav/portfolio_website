@@ -10,7 +10,7 @@ const RightNav = ({ open }) => {
         <a href="#Technology">Technology</a>
       </li>
       <li className="py-4 px-2 md:py-0 md:px-0 text-white md:text-gray-800 hover:text-blue-500 transition-colors duration-200">
-        <a href="#About">About Me</a>
+        <a href="#AboutSection">About Me</a>
       </li>
       <li className="py-4 px-2 md:py-0 md:px-0 text-white md:text-gray-800 hover:text-blue-500 transition-colors duration-200">
         <a href="#Experiences">Experiences</a>
@@ -19,7 +19,7 @@ const RightNav = ({ open }) => {
         <a href="#Certifications">Certifications</a>
       </li>
       <li className="py-4 px-2 md:py-0 md:px-0 text-white md:text-gray-800 hover:text-blue-500 transition-colors duration-200">
-        <a href="#FeedbackForm">Contact us</a>
+        <a href="#FeedbackForm">Contact Me</a>
       </li>
     </ul>
   );

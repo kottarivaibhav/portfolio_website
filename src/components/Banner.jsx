@@ -18,7 +18,7 @@ const BannerSection = () => {
             Aspiring Computer Science Engineer
           </h2>
           <p className='mt-4 mr-20 text-base md:text-lg lg:text-xl  text-justify'>
-            A Computer Science Engineering student at St Joseph Engineering College, Mangalore, passionate about Data Science and development. I am always curious to learn new things and explore new technologies. I am dedicated to honing my skills in web development, including HTML, CSS, JavaScript, React, and Flask. I am eager to apply my knowledge and enthusiasm in a collaborative, innovative environment, contributing to dynamic, user-centric web applications.
+            A Computer Science Engineering Final Year student at St Joseph Engineering College, Mangalore, passionate about Web Development. I am always curious to learn new things and explore new technologies. I am dedicated to honing my skills in web development, including HTML, CSS, JavaScript, React, and Flask. I am eager to apply my knowledge and enthusiasm in a collaborative, innovative environment, contributing to dynamic, user-centric web applications.
           </p>
           <div className='flex justify-center md:justify-start mt-6'>
             <button className="px-6 py-3 bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full text-white font-semibold shadow-md hover:from-blue-700 hover:to-cyan-700">
