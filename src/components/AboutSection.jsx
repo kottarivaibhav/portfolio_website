@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutMeSection = () => {
   return (
-    <section className="mt-4 mr-3 p-6" id="About">
+    <section className="mt-4 mr-3 p-6 sm:mt-3 sm:mr-2 sm:p-4 md:mt-2 md:mr-1 md:p-3 lg:mt-1 lg:mr-0 lg:p-2" id="About">
       <div className="container m-auto px-4">
         <h2 className="text-4xl font-bold underline-header text-center">About me</h2>
         <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">

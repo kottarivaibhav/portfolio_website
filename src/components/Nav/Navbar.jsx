@@ -1,40 +1,15 @@
 import React from 'react';
-import styled from 'styled-components';
 import Burger from './Burger'; // Assuming you have a Burger component for the menu icon
 
-const HeaderContainer = styled.header`
-  width: 100%;
-  height: 55px;
-  background-color: #7ce0fc; /* Set background color */
-  border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Center items vertically */
-  position: sticky; /* Make the header sticky */
-  top: 0; /* Stick to the top of the viewport */
-  z-index: 1000; /* Ensure it stays above other content */
-  font-family: 'Arial, sans-serif'; /* Set font family */
-  font-size: 16px; /* Set font size */
-  color: #333; /* Set font color */
-
-  .logo {
-    padding: 15px 0;
-    font-size: 1.5rem; /* Adjust font size */
-    font-weight: bold; /* Make the logo text bold */
-    color: #333; /* Set logo text color */
-  }
-`;
-
-const Header = () => {
+const Navbar = () => {
   return (
-    <HeaderContainer>
-      <div className="logo">
+    <header className="w-full h-14 bg-[#7ce0fc] border-b-2 border-gray-200 px-5 flex justify-between items-center sticky top-0 z-50 font-sans text-base text-gray-800">
+      <div className="logo py-3 text-xl font-bold text-gray-800">
         <h1>Portfolio Website</h1>
       </div>
       <Burger />
-    </HeaderContainer>
+    </header>
   );
 };
 
-export default Header;
+export default Navbar;
